@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Data Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Jaipur Rugs Co. Pvt. Ltd</h1>
+        <h2>New Customer Data for Navision Input</h2>
+        <form id="customer-form" action="https://customerdata-1.onrender.com/" method="post">
+            <fieldset>
+                <legend>Customer's Information</legend>
+                <label for="gstin">GSTIN#:</label>
+                <input type="text" id="gstin" name="gstin" placeholder="e.g., 08AABCJ6934C1ZP" required>
+
+                <label for="gstin-type">GSTIN Type:</label>
+                <select id="gstin-type" name="gstin-type">
+                    <option value="Normal Registered">Normal Registered</option>
+                    <option value="Exempted">Exempted</option>
+                    <option value="Under Composition">Under Composition</option>
+                    <option value="UnRegistered">UnRegistered</option>
+                </select>
+
+                <label for="business-type">Business Type:</label>
+                <select id="business-type" name="business-type">
+                    <option value="B2B">B2B</option>
+                    <option value="B2C" selected>B2C</option>
+                </select>
+
+                <label for="pan">PAN#:</label>
+                <input type="text" id="pan" name="pan" placeholder="e.g., AHPPP9009S" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g., Jaipur Rugs Co. Pvt. Ltd" value="The Oberoi Rajvilas Jaipur" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="e.g., info@jaipurrugsco.com" value="amit.sk@jaipurrugs.com" required>
+
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" placeholder="e.g., www.jaipurrugsco.com" required>
+
+                <label for="address1">Address 1:</label>
+                <input type="text" id="address1" name="address1" placeholder="e.g., Street number, House number, P.O. Box, and c/o"  required>
+
+                <label for="address2">Address 2:</label>
+                <input type="text" id="address2" name="address2" placeholder="e.g., Apartment, Suite, Unit, Building, floor"  required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="e.g., Jaipur" required>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="e.g., Rajasthan"  required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="e.g., India" required>
+
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" id="postal-code" name="postal-code" placeholder="e.g., 302031"  required>
+
+                <label for="primary-phone">Primary Phone No.:</label>
+                <input type="tel" id="primary-phone" name="primary-phone" placeholder="e.g., +91 7412060542"  required>
+
+                <label for="secondary-phone">Secondary Phone No.:</label>
+                <input type="tel" id="secondary-phone" name="secondary-phone">
+
+                <label for="fax">Fax No.:</label>
+                <input type="tel" id="fax" name="fax" required>
+
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" name="contact" placeholder="e.g., Sir John A. MACDONALD" required>
+
+                <label for="gen-bus-posting-group">Gen. Bus. Posting Group:</label>
+                <input type="text" id="gen-bus-posting-group" name="gen-bus-posting-group" required>
+
+                <label for="customer-classification">Customer Classification:</label>
+                <input type="text" id="customer-classification" name="customer-classification" required>
+
+                <label for="customer-type">Customer Type:</label>
+                <input type="text" id="customer-type" name="customer-type" required>
+
+                <label for="currency-code">Currency Code:</label>
+                <input type="text" id="currency-code" name="currency-code" >
+
+                <label for="priority">Priority:</label>
+                <input type="number" id="priority" name="priority" value="0">
+
+                <label for="packing-instructions">Packing Instructions:</label>
+                <textarea id="packing-instructions" name="packing-instructions"></textarea>
+
+                <label for="default-location-code">Default Location Code:</label>
+                <input type="text" id="default-location-code" name="default-location-code" value="LOC-009" required>
+
+                <label for="payment-terms">Payment Terms:</label>
+                <input type="text" id="payment-terms" name="payment-terms" value="100% Advance" required> 
+
+                <label for="merchandising-sales-person-name">Merchandising/Sales Person Name:</label>
+                <input type="text" id="merchandising-sales-person-name" name="merchandising-sales-person-name" value="Amit Shukla" required>
+
+                <label for="territory-head-name">Territory Head Name:</label>
+                <input type="text" id="territory-head-name" name="territory-head-name" value="Amit Shukla" required>
+
+                <label for="agent">Agent / IDA:</label>
+                <input type="text" id="agent" name="agent" required>
+
+                <label for="agent-name">Agent's / IDA Name:</label>
+                <input type="text" id="agent-name" name="agent-name" required>
+
+                <label for="agent-commission">Agent Commission %age:</label>
+                <input type="number" id="agent-commission" name="agent-commission" step="0.01" required>
+
+                <h3>Shipping Address & Communication</h3>
+
+                <label>
+                    <input type="checkbox" id="same-as-billing" name="same-as-billing">
+                    Shipping address is the same as billing address
+                </label>
+
+                <label for="shipping-address1">Address 1:</label>
+                <input type="text" id="shipping-address1" name="shipping-address1" required>
+
+                <label for="shipping-address2">Address 2:</label>
+                <input type="text" id="shipping-address2" name="shipping-address2" required>
+
+                <label for="shipping-city">City:</label>
+                <input type="text" id="shipping-city" name="shipping-city" required>
+
+                <label for="shipping-state">State:</label>
+                <input type="text" id="shipping-state" name="shipping-state" required>
+ 
+                <label for="shipping-country">Country:</label>
+                <input type="text" id="shipping-country" name="shipping-country" required>
+
+                <label for="shipping-postal-code">Postal Code:</label>
+                <input type="text" id="shipping-postal-code" name="shipping-postal-code" required>
+
+                <label for="shipping-primary-phone">Primary Phone No.:</label>
+                <input type="tel" id="shipping-primary-phone" name="shipping-primary-phone" required>
+
+                <label for="shipping-fax">Fax No.:</label>
+                <input type="tel" id="shipping-fax" name="shipping-fax" required>
+
+                <label for="shipping-contact">Contact:</label>
+                <input type="text" id="shipping-contact" name="shipping-contact" required>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
